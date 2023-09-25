@@ -86,7 +86,11 @@ nav {
     display: flex;
     gap: 1.9rem; }
     nav ul li {
-      font-weight: var(--bold-font); }
+      font-weight: bold; }
+  nav .nav-link {
+    color: #ffffff; }
+    nav .nav-link:hover {
+      color: #BC93F9; }
 
 .burger-menu {
   color: #7e5af0;
@@ -158,6 +162,10 @@ nav {
   padding: 32px 0;
   margin-top: 2rem; }
 
+.project-link {
+  color: #7e5af0;
+  text-decoration: none; }
+
 .project-pic {
   width: 65%;
   height: 60%; }
@@ -200,16 +208,18 @@ nav {
   background-color: #ffffff; }
   .contact-form-container label {
     line-height: 2.7em;
-    font-weight: var(--bold-font);
+    font-weight: bold;
     color: #7e5af0; }
   .contact-form-container textarea {
     min-height: 6.25rem;
     font-size: 14px; }
 
+.form-control {
+  border: none !important; }
+
 .contact-form-container .input-field {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px 10px 15px;
   border-radius: 5px;
   border: none;
   border: 2px outset #7e5af0;
@@ -229,7 +239,7 @@ nav {
   border-radius: 5px;
   font-size: 1rem;
   color: #ffffff;
-  font-weight: var(--bold-font);
+  font-weight: bold;
   transition: 0.3s; }
   .submit-btn:hover {
     background-color: #218d61;
