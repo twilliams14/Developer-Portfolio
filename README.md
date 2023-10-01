@@ -12,6 +12,10 @@ My portfolio website for my front-end and art projects.
 
 **Client:** HTML, CSS, Vanilla JavaSCript
 
+## Commands
+- npm run sass
+    this will convert the sass file into css for the html file. 
+
 ## Tools Used
 
 Below are are list of tools used, and the precise things they were used for:
