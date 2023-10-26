@@ -351,4 +351,10 @@ footer {
   .project-container {
     width: 17.875rem; }
   .contact-form-container {
-    max-width: 17.75rem; } }
+    max-width: 17.75rem; } 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
