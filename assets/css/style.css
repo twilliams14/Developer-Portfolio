@@ -1,5 +1,5 @@
-@import url("https://use.typekit.net/pvu5flt.css");
-@import url("https://use.typekit.net/pvu5flt.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap");
 html {
   scroll-behavior: smooth; }
 
@@ -10,31 +10,23 @@ html {
   box-sizing: border-box;
   /* border: 2px solid red; */ }
 
+h2, .h2,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "nimbus-roman", serif !important; }
+  font-family: "Tinos", serif !important; }
 
 body {
   color: #ffffff !important;
   background-color: #201E31 !important;
-  font-family: "sofia-pro", sans-serif; }
+  font-family: "Source Sans Pro", Arial, Sans-Serif !important; }
 
 img {
   height: auto;
   width: 100%; }
 
-@media (max-width: 1200px) {
-  main.container {
-    max-width: 1140px; } }
-
-@media (max-width: 992px) {
-  main.container {
-    max-width: 720px; } }
-
-@media (max-width: 576px) {
-  main.container {
-    max-width: 540px; } }
+main {
+  padding: 0px 70px; }
 
 .container {
   width: 100%;
@@ -50,7 +42,7 @@ a {
   text-decoration: none;
   color: #16161A; }
   a:hover {
-    color: #2BB67D !important; }
+    color: #58bc6a !important; }
   a.none {
     text-decoration: none;
     color: #7e5af0; }
@@ -108,7 +100,10 @@ nav {
 .slogan {
   text-align: left; }
   .slogan h2 {
-    font-size: 6rem; }
+    font-size: 5rem; }
+  @media (max-width: 992px) {
+    .slogan h2 {
+      font-size: 3rem; } }
 
 /* Hero section */
 .hero {
@@ -131,7 +126,8 @@ nav {
     margin-bottom: var(--bottom-margin); }
   .bio p {
     line-height: 2;
-    padding: 0.3rem 0; }
+    padding: 0.3rem 0;
+    font-family: "Source Sans Pro", Arial, Sans-Serif; }
 
 /* Hero section ends */
 /* More about */
@@ -172,7 +168,7 @@ nav {
   margin-top: 2rem; }
 
 .project-link {
-  color: #7e5af0;
+  color: #BC93F9;
   text-decoration: none; }
 
 .project-pic {
@@ -243,16 +239,16 @@ nav {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #2BB67D;
-  border: 2px solid #218d61;
+  background-color: #58bc6a;
+  border: 2px solid #40a152;
   border-radius: 5px;
   font-size: 1rem;
-  color: #ffffff;
+  color: #16161A;
   font-weight: bold;
   transition: 0.3s; }
   .submit-btn:hover {
-    background-color: #218d61;
-    border: 2px solid #2BB67D;
+    background-color: #40a152;
+    border: 2px solid #58bc6a;
     cursor: pointer; }
 
 /* Contacts section ends */

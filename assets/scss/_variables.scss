@@ -1,10 +1,10 @@
-@import url("https://use.typekit.net/pvu5flt.css");
-@import url("https://use.typekit.net/pvu5flt.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
 
 $primary: #7e5af0;
 $secondary: #16161A;
 $tertiary: #BC93F9;
-$highlight: #2BB67D;
+$highlight: #58bc6a;
 $link-color: $highlight;
 $bg-color: #201E31;
 
@@ -18,5 +18,5 @@ $transition: 0.3s;
 $white: #ffffff; 
 
 $font-size-base: 1rem;
-$font-family-serif: "nimbus-roman", serif;
-$font-family-sans-serif: "sofia-pro", sans-serif;
+$font-family-serif: "Tinos", serif;
+$font-family-sans-serif: "Source Sans Pro", Arial, Sans-Serif;

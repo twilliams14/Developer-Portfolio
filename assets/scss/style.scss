@@ -13,6 +13,7 @@ html {
 }
 
 // Heading overrides.
+h2, .h2,
 h4, .h4,
 h5, .h5, 
 h6, .h6 {
@@ -22,7 +23,7 @@ h6, .h6 {
 body {
   color: $white !important;
   background-color: $bg-color !important;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif !important;
 }
 
 img {
@@ -30,16 +31,17 @@ img {
   width: 100%;
 }
 
-main.container {
-  @media(max-width: 1200px) {
-    max-width: 1140px;
-  }
-  @media(max-width: 992px) {
-    max-width: 720px;
-  }
-  @media(max-width: 576px) {
-    max-width: 540px;
-  }
+main {
+  padding: 0px 70px;
+  // @media(max-width: 1200px) {
+  //   max-width: 1140px;
+  // }
+  // @media(max-width: 992px) {
+  //   max-width: 720px;
+  // }
+  // @media(max-width: 576px) {
+  //   max-width: 540px;
+  // }
 }
 
 .container {
@@ -131,7 +133,12 @@ nav {
 .slogan {
   text-align: left;
   h2 {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  @media(max-width: 992px) {
+    h2 {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -160,6 +167,7 @@ nav {
   p {
     line-height: 2;
     padding: 0.3rem 0;
+    font-family: $font-family-sans-serif;
   }
 }
 
@@ -214,7 +222,7 @@ nav {
 }
 
 .project-link {
-  color: $primary;
+  color: $tertiary;
   text-decoration: none;
 }
 
@@ -307,7 +315,7 @@ nav {
   border: 2px solid $highlight-dark;
   border-radius: 5px;
   font-size: 1rem;
-  color: $white;
+  color: $secondary;
   font-weight: bold;
   transition: $transition;
 
