@@ -13,6 +13,7 @@ html {
 }
 
 // Heading overrides.
+h2, .h2,
 h4, .h4,
 h5, .h5, 
 h6, .h6 {
@@ -22,19 +23,25 @@ h6, .h6 {
 body {
   color: $white !important;
   background-color: $bg-color !important;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif !important;
 }
 
-main.container {
-  @media(max-width: 1200px) {
-    max-width: 1140px;
-  }
-  @media(max-width: 992px) {
-    max-width: 720px;
-  }
-  @media(max-width: 576px) {
-    max-width: 540px;
-  }
+img {
+  height: auto;
+  width: 100%;
+}
+
+main {
+  padding: 0px 70px;
+  // @media(max-width: 1200px) {
+  //   max-width: 1140px;
+  // }
+  // @media(max-width: 992px) {
+  //   max-width: 720px;
+  // }
+  // @media(max-width: 576px) {
+  //   max-width: 540px;
+  // }
 }
 
 .container {
@@ -53,7 +60,7 @@ a {
   text-decoration: none;
   color: $secondary;
   &:hover {
-    color: $highlight;
+    color: $highlight !important;
   }
   &.none {
     text-decoration: none;
@@ -123,6 +130,18 @@ nav {
 }
 /* Navbar ends */
 
+.slogan {
+  text-align: left;
+  h2 {
+    font-size: 5rem;
+  }
+  @media(max-width: 992px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
 /* Hero section */
 .hero {
   display: flex;
@@ -146,10 +165,13 @@ nav {
     margin-bottom: var(--bottom-margin);
   }
   p {
-    line-height: var(--line-height);
+    line-height: 2;
     padding: 0.3rem 0;
+    font-family: $font-family-sans-serif;
   }
 }
+
+
 
 /* Hero section ends */
 
@@ -162,7 +184,7 @@ nav {
     text-align: center;
   }
   p {
-    line-height: var(--line-height);
+    line-height: 2;
     padding: 0.4rem;
   }
 }
@@ -200,7 +222,7 @@ nav {
 }
 
 .project-link {
-  color: $primary;
+  color: $tertiary;
   text-decoration: none;
 }
 
@@ -293,7 +315,7 @@ nav {
   border: 2px solid $highlight-dark;
   border-radius: 5px;
   font-size: 1rem;
-  color: $white;
+  color: $secondary;
   font-weight: bold;
   transition: $transition;
 
@@ -313,6 +335,9 @@ nav {
   position: fixed;
   right: 1%;
   bottom: 50%;
+  i {
+    padding-bottom: 1rem;
+  }
 }
 
 .socicon {
@@ -354,7 +379,7 @@ footer {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: $secondary;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
@@ -368,11 +393,12 @@ footer {
   }
   nav ul {
     position: fixed;
-    background-color: $bg-color;
+    background-color: $primary;
     flex-direction: column;
-    top: 86px;
-    left: 10%;
-    width: 80%;
+    top: 96px;
+    right: 0;
+    width: 50%;
+    height: 100%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -400,7 +426,6 @@ footer {
       width: 30rem;
     }
   }
-
 
   .bio {
     margin-top: -7rem;

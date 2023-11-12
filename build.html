@@ -8,68 +8,81 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous" />
-    
     <!-- Fontawesome-->
     <script src="https://kit.fontawesome.com/e724f88ba2.js" crossorigin="anonymous"></script>
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+    crossorigin="anonymous" />
 
     <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Trish Young | Digital Artist | Front-End Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trish Young | Front-End Web Developer | Digital Artist</title>
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav>
-      <h1><a href="#about" class="none">Trish Young</a></h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#professional" class="nav-link">Professional</a></li>
-        <li><a href="#personal" class="nav-link">Personal</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
-
-    <main class="container" role="main">
-      <!-- More about -->
-      <section class="more-about">
-        <h2>More About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-          autem deleniti cupiditate molestias quis unde quae totam porro dicta
-          iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-          hello
-        </p>
-
-      </section>
+    <navigation-header></navigation-header>
+   
+    <main role="main">
+      <div class="slogan py-4">
+        <h2>Digital Artist <em>turned</em></h2>
+        <h2>Front-End Developer</h2>
+      </div>
+      <div class="row justify-content-center">
+        <section class="col-6 col-md-3">
+          <img src="/assets/images/profile_image.jpg" alt="profile-image">
+        </section>
+        <!-- More about -->
+        <section class="more-about col-6 col-md-6">
+          <h2>More About Me</h2>
+          <p>
+            I am a multi-faceted individual with a passion for both <strong>front-end web development</strong> and <strong>digital art</strong>. 
+            I find joy in creating visually appealing, accessible and user-friendly websites that are also responsive and performant. 
+            <br><br>
+            I am excited to use my skills in front-end web development and digital art to create innovative and engaging experiences for users. 
+            I am passionate about creating websites that are not only visually appealing but also functional, accessible and user-friendly. 
+          </p>
+        </section>
+      </div>
 
       <!-- Skills section -->
       <section class="skills" id="skills">
-        <h2 class="skill-header">Professional Work</h2>
+        <h2 class="skill-header">Code</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+        
+            <h3 class="project-title">Placeholder</h3>
+            <p class="project-details">
+        
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="project-container project-card">
+        
+            <h3 class="project-title">Placeholder</h3>
+            <p class="project-details">
+        
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="project-container project-card">
+        
+            <h3 class="project-title">Placeholder</h3>
+            <p class="project-details">
+          
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
 
         <div class="skills-wrapper">
         
@@ -78,11 +91,11 @@
 
       <!-- Projects section -->
       <section class="projects" id="projects">
-        <h2 class="projects-title">Personal Work</h2>
+        <h2 class="projects-title">Art</h2>
         <div class="projects-container">
           <div class="project-container project-card">
         
-            <h3 class="project-title">Expense Tracker</h3>
+            <h3 class="project-title">Placeholder</h3>
             <p class="project-details">
         
             </p>
@@ -90,7 +103,7 @@
           </div>
           <div class="project-container project-card">
         
-            <h3 class="project-title">Netflix Clone</h3>
+            <h3 class="project-title">Placeholder</h3>
             <p class="project-details">
         
             </p>
@@ -98,7 +111,7 @@
           </div>
           <div class="project-container project-card">
         
-            <h3 class="project-title">Greeny Earth</h3>
+            <h3 class="project-title">Placeholder</h3>
             <p class="project-details">
           
             </p>
@@ -163,51 +176,24 @@
         </div>
       </section>
 
-      <!-- Social accounts - Fixed to the right -->
-      <div class="socials">
-        <a href="#" target="_blank"
-          ><img
-            src="assets/icons/icons8-instagram.gif"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank">
-          <img
-            src="assets/icons/icons8-linkedin-circled.gif"
-            alt="Linkedin"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank">
-          <img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-        /></a>
-      </div>
+    <social-icons></social-icons>
 
-      <!-- Scroll to top -->
-      <i class="scroll-up" id="scroll-up">
-        <img 
-          src="assets/icons/icons8-upward-arrow.gif"
-          class="socicon up-arrow"
-          alt=""
-      /></i>
+    <!-- Scroll to top -->
+     <i alt="scroll to top" class="scroll-up fa-solid fa-arrow-up fa-2x" id="scroll-up"></i>
     </main>
 
     <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2023. Built with &#x2661; by Trish</p>
-    </footer>
+    <main-footer></main-footer>
 
-    <!-- Website scripts -->
+    <!-- Website scripts --> 
+    <script src="assets/js/build.js"></script>
     <script src="assets/js/app.js"></script>
 
     <!-- Ion icons scripts -->
-    <script
-      type="module"
+    <script type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
+    <script nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
