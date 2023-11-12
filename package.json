@@ -6,13 +6,12 @@
     "@fortawesome/fontawesome-free": "^6.4.2",
     "bootstrap": "^3.4.1",
     "node-gyp": "^10.0.1",
-    "node-sass": "^4.14.1",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "webpack": "^5.89.0"
   },
   "scripts": {
-    "sass": "node-sass -w assets/scss/ -o assets/css/ --recursive"
+    "sass": "sass -w assets/scss/style.scss assets/css/style.css"
   },
   "repository": {
     "type": "git",
